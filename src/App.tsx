@@ -3,7 +3,6 @@ import SignIn from "./views/SignIn/SignIn";
 import SignUp from "./views/SignUp/SignUp";
 import {Route, Routes} from "react-router-dom";
 
-
 function App() {
 
   return (

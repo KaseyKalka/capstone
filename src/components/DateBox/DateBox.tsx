@@ -7,7 +7,7 @@ const DateBox = () => {
 
   return (
     <>
-      {/* <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} /> */}
+      <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
     </>
   );
 };
