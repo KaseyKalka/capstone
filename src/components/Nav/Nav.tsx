@@ -50,18 +50,11 @@ const Nav = () => {
             <nav>
                 <img src='../../assets/img/lighting.png' className='logo'/>
                 <ul>
-                    <li>
-                        <StyledLink to='/'>Watch List</StyledLink>
-                    </li>
-                    <li className='dropdown'>
-                        <StyledLink to='/sports'><button className='dropbtn'>Sports
-                            <i className="fa fa-caret-down"></i></button>
-                            <StyledLink to='/nfl'>NFL</StyledLink>
-                            <StyledLink to='/nba'>NBA</StyledLink>
-                            <StyledLink to='/mlb'>MLB</StyledLink>
-                            <StyledLink to='/nhl'>NHL</StyledLink>
-                        </StyledLink>
-                    </li>
+                    <li><StyledLink to='/'>Watch List</StyledLink></li>
+                    <li><StyledLink to='/nfl'>NFL</StyledLink></li>
+                    <li><StyledLink to='/nba'>NBA</StyledLink></li>
+                    <li><StyledLink to='/mlb'>MLB</StyledLink></li>
+                    <li><StyledLink to='/nhl'>NHL</StyledLink></li>
                 </ul>
                 <img src="../../assets/img/Deault_pfp.png" className='profile-pic'/>
             </nav>
