@@ -26,7 +26,6 @@ const Nav = () => {
     useEffect(() => {
        onAuthStateChanged(auth, (user) =>{
             if (user) {
-                console.log(user)
                 const email = user.email
                 const id = user.uid
                 const displayName = user.displayName
@@ -47,8 +46,7 @@ const Nav = () => {
     return (
     <>
         <div className=''>
-            <nav>
-                <img src='../../assets/img/lighting.png' className='logo'/>
+            <nav><img src='src/components/Nav/assets/img/lighting.png' className='logo'/>
                 <ul>
                     <li><StyledLink to='/'>Watch List</StyledLink></li>
                     <li><StyledLink to='/nfl'>NFL</StyledLink></li>
@@ -56,7 +54,7 @@ const Nav = () => {
                     <li><StyledLink to='/mlb'>MLB</StyledLink></li>
                     <li><StyledLink to='/nhl'>NHL</StyledLink></li>
                 </ul>
-                <img src="../../assets/img/Deault_pfp.png" className='profile-pic'/>
+                <img src="src\components\Nav\assets\img\Default_pfp.png" className='profile-pic'/>
             </nav>
         </div>
     </>

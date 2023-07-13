@@ -3,6 +3,8 @@ import Nav from '../../components/Nav/Nav'
 import SportEvent from '../../components/SportEvent/SportEvent'
 
 const NBA = () => {
+  let sport_id = 4; 
+    
   return (
     <>
         <Nav/>

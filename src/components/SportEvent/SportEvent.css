@@ -32,3 +32,20 @@
 .score{
     text-align: center;
 }
+
+.home p{
+    font-size: small;
+}
+
+.away p{
+    font-size: small;
+}
+
+.city h4{
+    font-size: medium;
+}
+
+.event-date {
+    text-align: center;
+    font-size: small;
+}

@@ -1,15 +1,23 @@
+import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { DatePicker } from "@mui/x-date-pickers/DatePicker";
+import "./DateBox.css";
 import { useState } from "react";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
-import "./DateBox.css"
+import SportEvent from "../SportEvent/SportEvent";
 
 const DateBox = () => {
-  const [startDate, setStartDate] = useState(new Date());
+
+  const [date, setDate] = useState<Date | null>();
 
   return (
     <>
       <div className="date-picker">
-        <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+          <DemoContainer components={["DatePicker"]}>
+            <DatePicker label="Select a Date" value={date} onChange={(date) => setDate(date)}/>
+          </DemoContainer>
+        </LocalizationProvider>
       </div>
     </>
   );
