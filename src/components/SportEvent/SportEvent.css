@@ -49,3 +49,13 @@
     text-align: center;
     font-size: small;
 }
+
+.follow{
+    width: 100px;
+    height: 30px;
+}
+
+.follow button{
+    justify-content: center;
+    font-size: small;
+}
