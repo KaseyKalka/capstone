@@ -16,8 +16,7 @@ import Box from "@mui/material/Box";
 export default function SignUp() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
+  const [displayName, setDisplayName] = useState("");
 
   const navigate = useNavigate();
 
@@ -47,9 +46,6 @@ export default function SignUp() {
             alignItems: "center",
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
-            <LockOutlinedIcon />
-          </Avatar>
           <Typography component="h1" variant="h5">
             Sign up
           </Typography>
@@ -60,33 +56,19 @@ export default function SignUp() {
             sx={{ mt: 3 }}
           >
             <Grid container spacing={2}>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12}>
                 <TextField
                   autoComplete="given-name"
-                  name="firstName"
+                  name="displayName"
                   required
                   fullWidth
-                  id="firstName"
-                  label="First Name"
+                  id="displayName"
+                  label="Username"
                   autoFocus
                   onChange={(event) => {
-                    setFirstName(event.target.value);
+                    setDisplayName(event.target.value);
                   }}
-                  value={firstName}
-                />
-              </Grid>
-              <Grid item xs={12} sm={6}>
-                <TextField
-                  required
-                  fullWidth
-                  id="lastName"
-                  label="Last Name"
-                  name="lastName"
-                  autoComplete="family-name"
-                  onChange={(event) => {
-                    setLastName(event.target.value);
-                  }}
-                  value={lastName}
+                  value={displayName}
                 />
               </Grid>
               <Grid item xs={12}>
